@@ -11,9 +11,9 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(Router);
 
-const PORT = 4000;
+const PORT = 80;
 
-app.listen(PORT,() =>{
+app.listen(PORT,'0.0.0.0',() =>{
     console.log(`Server is running on port ${PORT}`);
 })
 
